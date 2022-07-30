@@ -17,3 +17,7 @@ def skills():
 @app.route('/projects')
 def projects():
     return render_template('projects.html', title="Projects")
+
+@app.route('/resume')
+def resume():
+    return render_template('resume.html', title="Resume")
