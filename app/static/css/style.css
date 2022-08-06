@@ -13,8 +13,38 @@
     background: rgba(91, 149, 241, 0.925);
 }
 
-/* Index page styles */
+/*Navbar*/
+nav li {
+    display: inline-block;
+    
+}
 
+.whitebelt:hover {
+    background-color: white;
+    transition: ease-in 0.3s;
+}
+.bluebelt:hover {
+    background-color: blue;
+    transition: ease-in 0.3s;
+}
+
+.purplebelt:hover {
+    background-color: purple;
+    transition: ease-in 0.3s;
+}
+
+.brownbelt:hover {
+    background-color: brown;
+    transition: ease-in 0.3s;
+}
+
+
+.blackbelt:hover {
+    background-color: black;
+    transition: ease-in 0.3s;
+}
+
+/* Index page styles */
 .btncontainer {
     display: flex;
     flex-direction: row;
@@ -22,7 +52,6 @@
     align-items: center;
     text-align: center;
     min-height: 100vh;
-
 }
 
 .enter {
