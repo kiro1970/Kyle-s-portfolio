@@ -21,3 +21,7 @@ def projects():
 @app.route('/resume')
 def resume():
     return render_template('resume.html', title="Resume")
+
+@app.route('/links')
+def links():
+    return render_template('links.html', title="Links")

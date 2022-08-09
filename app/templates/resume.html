@@ -1,8 +1,26 @@
 {% extends 'layout.html' %}
 
 {% block content %} 
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
     <!--Certifications and skills-->
     <section style="background: rgba(91, 149, 241, 0.712);" class="text-white mt-5" id="skill">
+
         <div class="text-center">
             <h1 class="">Kyle Mikouchi-Lopez</h1>
             <h2>Entryy level Fullstack/Python Programmer</h2>
@@ -16,63 +34,67 @@
             <h3>Also introduced to Flask, Node JS, PostgresSQL and React</h3>
         </div>
 
-        <div>
-            <h2>Education</h2>
-            <ul>
-                <li>Software Development Certificate, Python Software Development Bootcamp - Coding Temple    2022</li>
-                <li>Trident Technical College - Charleston, SC                            2013 – 2014</li>
-                <li>Technical College of the LowCountry – Bluffton, SC                        2012 – 2013</li>
-                <li>Native English – Japanese JLPT N4 certified                            2019</li>
-            </ul>
-        </div>
-        
-        <div>
-            <h2>Key Accomplishments</h2>
-            <ul>
-                <li>Earned certificate in Programming/Full Stack Development to enhance technical skills</li>
-                <li>Received additional 1-on-1 training/mentoring from Chief Engineering and Technology Officer with over 30 years of IT experience. Training included software development and concepts that apply to object oriented programming languages for an additional three months after certification                </li>
-                <li>Traveled across the United States and Asia to train with professional Mixed Martial Arts fighters and Brazilian Jiu-Jitsu world champions, achieving level of brown belt </li>
-                <li>Earned certificate from Japanese language school; served as English tutor for Japanese students</li>
-                <li>Developed and implemented personal training programs for seniors with Parkinson’s Disease</li>
-                <li>Represented Rocksteady Boxing Hilton Head at local Parkinson’s Disease events, recruiting potential clients and networking/promoting brand with other organizations</li>
-            </ul>
-        </div>
-        
-        <div>
+        <div class="text-center mt-lg-4">
             <h2>Skills Summary</h2>
-            <p>Assessments; Coaching; Computer Programming; Curriculum Development; Customer Service; ESL Instructor; Interpersonal Skills; International Travel; IT / Technical Skills; Japanese JLPT N4 certified (speaking); Leadership; Management; Mentor; Microsoft Office: Excel, PowerPoint and Word; Organizational Skills; Problem Solving; Recruitment; Sales; Strategic Planning; Teaching; Training</p>
+            <h3 class="ms-2 me-2">Assessments; Coaching; Computer Programming; Curriculum Development; Customer Service; ESL Instructor; Interpersonal Skills; International Travel; IT / Technical Skills; Japanese JLPT N4 certified (speaking); Leadership; Management; Mentor; Microsoft Office: Excel, PowerPoint and Word; Organizational Skills; Problem Solving; Recruitment; Sales; Strategic Planning; Teaching; Training</h3>
+        </div>
+
+        <div>
+
+            <button type="button" class="collapsible"><h2>Education</h2></button>
+            <div class="content">
+                <ul>
+                    <li>Software Development Certificate, Python Software Development Bootcamp - Coding Temple    2022</li>
+                    <li>Trident Technical College - Charleston, SC                            2013 – 2014</li>
+                    <li>Technical College of the LowCountry – Bluffton, SC                        2012 – 2013</li>
+                    <li>Native English – Japanese JLPT N4 certified                            2019</li>
+                </ul>
+            </div>    
         </div>
         
         <div>
-            <h2>Experience</h2>
-            <h3>RipTide Martial Arts Academy</h3><p>Bluffton, SC </p><p>2013-2021</p>
-            <h4><italics>Martial Arts / Fitness Class Instructor, Senior Coach and Gym Manager</italics></h4>
-            <ul>
-                <li>Managed gym. Responsibilities included new client enrollment, new employee training, employee scheduling, supply/equipment inventory and ordering and managing social media sites</li>
-                <li>As Senior Coach, led and coordinated a team of 6 junior coaches while instructing children’s martial arts classes (ages 5 to 13) of up to 50 students. Taught exercise and martial arts techniques, managed class and explained how discipline of martial arts can be applied in everyday life</li>
-                <li>Taught kickboxing fitness and Crossfit classes with up to 30 students. Led and demonstrated various exercises, designed class format and customized activities based on number of students</li>
-                <li>Taught adult classes including Muay Thai kickboxing, Brazilian Jiu-jitsu, Submission Grappling and Mixed Martial Arts. Classes ranged from beginner to advanced level.</li>
-            </ul>
-        </div>
-        
-        <div>
-            <h3>International Travel/ Training</h3><p>Japan, Korea, Thailand</p><p>2019-2021</p>
-            <h4><italics>Martial Arts Training/Trainer | Japanese Tutor</italics></h4>
-            <ul></ul>
-                <li>Traveled throughout the United States and Asia, training with professional Mixed Martial Arts and Brazilian Jiu-Jitsu world champion</li>
-                <li>Received extended stay training in Korea, Japan, and Thailand </li>
-                <li>Earned brown belt from Carlos Machado, famous Brazilian Jiu-Jitsu master</li>
-                <li>Received JLPT N4 certification for Native English – Japanese</li>
-                <li>Served as instructor for private English language lessons and served as tour guide</li>
-                <li>Due to Covid, opportunities for training Martial Arts and tutoring English were no longer available</li>
+            <button type="button" class="collapsible"><h2>Key Accomplishments</h2></button>
+            <div class="content">
+                <ul>
+                    <li>Earned certificate in Programming/Full Stack Development to enhance technical skills</li>
+                    <li>Received additional 1-on-1 training/mentoring from Chief Engineering and Technology Officer with over 30 years of IT experience. Training included software development and concepts that apply to object oriented programming languages for an additional three months after certification                </li>
+                    <li>Traveled across the United States and Asia to train with professional Mixed Martial Arts fighters and Brazilian Jiu-Jitsu world champions, achieving level of brown belt </li>
+                    <li>Earned certificate from Japanese language school; served as English tutor for Japanese students</li>
+                    <li>Developed and implemented personal training programs for seniors with Parkinson’s Disease</li>
+                    <li>Represented Rocksteady Boxing Hilton Head at local Parkinson’s Disease events, recruiting potential clients and networking/promoting brand with other organizations</li>
+                </ul>
             </div>
+        </div>
+        
         <div>
-            <h3>Rocksteady Boxing Hilton Head</h3><p>Hilton Head</p><p>2017-2021</p>
-            <h3>Personal Trainer | Group Fitness Instructor | Parkinson’s Disease Specialist</h3>
-            <ul></ul>
-                <li>Developed and implemented personal training programs for seniors with Parkinson’s Disease, ensuring all medical and safety protocols were met</li>
-                <li>Represented Rocksteady Boxing Hilton Head at local Parkinson’s Disease events</li>
-                <li>Recruited potential clients and networked/promoted brand with other organizations</li>
+            <button type="button" class="collapsible"><h2>Experience</h2></button>
+            <div class="content">
+                <h3>RipTide Martial Arts Academy</h3><p>Bluffton, SC </p><p>2013-2021</p>
+                <h4><italics>Martial Arts / Fitness Class Instructor, Senior Coach and Gym Manager</italics></h4>
+                <ul>
+                    <li>Managed gym. Responsibilities included new client enrollment, new employee training, employee scheduling, supply/equipment inventory and ordering and managing social media sites</li>
+                    <li>As Senior Coach, led and coordinated a team of 6 junior coaches while instructing children’s martial arts classes (ages 5 to 13) of up to 50 students. Taught exercise and martial arts techniques, managed class and explained how discipline of martial arts can be applied in everyday life</li>
+                    <li>Taught kickboxing fitness and Crossfit classes with up to 30 students. Led and demonstrated various exercises, designed class format and customized activities based on number of students</li>
+                    <li>Taught adult classes including Muay Thai kickboxing, Brazilian Jiu-jitsu, Submission Grappling and Mixed Martial Arts. Classes ranged from beginner to advanced level.</li>
+                </ul>
+
+                <h3>International Travel/ Training</h3><p>Japan, Korea, Thailand</p><p>2019-2021</p>
+                <h4><italics>Martial Arts Training/Trainer | Japanese Tutor</italics></h4>
+                <ul></ul>
+                    <li>Traveled throughout the United States and Asia, training with professional Mixed Martial Arts and Brazilian Jiu-Jitsu world champion</li>
+                    <li>Received extended stay training in Korea, Japan, and Thailand </li>
+                    <li>Earned brown belt from Carlos Machado, famous Brazilian Jiu-Jitsu master</li>
+                    <li>Received JLPT N4 certification for Native English – Japanese</li>
+                    <li>Served as instructor for private English language lessons and served as tour guide</li>
+                    <li>Due to Covid, opportunities for training Martial Arts and tutoring English were no longer available</li>
+
+                <h3>Rocksteady Boxing Hilton Head</h3><p>Hilton Head</p><p>2017-2021</p>
+                <h3>Personal Trainer | Group Fitness Instructor | Parkinson’s Disease Specialist</h3>
+                <ul></ul>
+                    <li>Developed and implemented personal training programs for seniors with Parkinson’s Disease, ensuring all medical and safety protocols were met</li>
+                    <li>Represented Rocksteady Boxing Hilton Head at local Parkinson’s Disease events</li>
+                    <li>Recruited potential clients and networked/promoted brand with other organizations</li>
+            </div>
         </div>
     </section>
 {% endblock %}

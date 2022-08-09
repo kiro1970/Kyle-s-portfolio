@@ -16,7 +16,7 @@
 /*Navbar*/
 nav li {
     display: inline-block;
-    
+
 }
 
 .whitebelt:hover {
@@ -71,4 +71,48 @@ nav li {
     box-shadow: inset 300px 0 0 0 black;
     cursor: pointer;
     color: red;
+  }
+
+  /*Projects page styling*/
+  .projectcard {
+    width: 25%;
+    height: 400px;
+
+  }
+
+  .project {
+    padding: 50px;
+    background-color: #b7c9b7b2;
+    transition: transform .4s; /* Animation */
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+  
+  .project:hover {
+    transform: scale(1.25); 
+  }
+
+  /*Resume Page styles*/
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
   }

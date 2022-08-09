@@ -1,37 +1,30 @@
 {% extends 'layout.html' %}
 
 {% block content %} 
-    <!--My work-->
-    <section class="my-work" id="work">
-        <h2 class="section__title">My work</h2>
-        <p class="section__subtitle"></p>
-        <div class="portfolio">
-
-            <!--Portfolio item 1-->
-            <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
-            </a>
-            
-            <!--Portfolio item 2-->
-            <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
-            </a>
-
-            <!--Portfolio item 3-->
-            <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
-            </a>
-
-            <!--Portfolio item 4-->
-            <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
-            </a>
-
-            <!--Portfolio item 5-->
-            <a href="#" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
-            </a>
-
+<div class="mt-5 row column">
+    <div class="projectcard col-3" style="width: 25%;">
+        <div class="m-5 project">
+            <div>
+                <img class="ms-1 me-1" style="height: 35px; width: 35px;" src="{{url_for('static', filename='flask-logo.png')}} "/>
+                <img class="ms-1 me-1" style="height: 35px; width: 35px;" src="{{url_for('static', filename='html-logo.png')}} "/>
+                <img class="ms-1 me-1" style="height: 35px; width: 35px;" src="{{url_for('static', filename='css-logo.png')}} "/>
+                <img class="ms-1 me-1" style="height: 35px; width: 35px;" src="{{url_for('static', filename='python-logo.png')}} "/>
+            </div>
+            <h1>TEST</h1>
+            <a href="https://github.com/kiro1970/car-class-exercise/blob/main/car-class-practice.py" class="text-center"><img class="ms-1 me-1" style="height: 30px; width: 30px;" src="{{url_for('static', filename='github-logo.png')}} "/></a>
         </div>
-    </section>
+    </div>
+    
+    <div class="projectcard col-3" style="width: 25%;">
+        <div class="m-5 project"><h1>TEST</h1></div>
+    </div>
+    
+    <div class="projectcard col-3" style="width: 25%;">
+        <div class="m-5 project"><h1>TEST</h1></div>
+    </div>
+    
+    <div class="projectcard col-3" style="width: 25%;">
+        <div class="m-5 project"><h1>TEST</h1></div>
+    </div>
+</div>
 {% endblock %}
